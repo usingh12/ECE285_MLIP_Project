@@ -96,8 +96,8 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
     
 - SSD/ - files for SSD implementation:
     - Video_experiments/ - folder that contains video test and detected file
-        - 2.mp4 - Test file
-        - test2_ssd.avi - Object detection on video
+        - SSD_Video_Test.mp4 - Test file
+        - SSD_Video.avi - Object detection on video
     - experiment/ - folder that contains training plot results and dectectd images
         - Plot_loss.ipynb - notebook to plot varoius training loss for SSD
         - img - folder containg Detected File for SSD
