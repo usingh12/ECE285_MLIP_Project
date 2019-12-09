@@ -65,8 +65,8 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
 
 | ------------- | Faster-RCNN(32)  | Faster-RCNN(16) | SSD |
 | ------------- | ---------------- | --------------- | --- |
-| Training      |  60%             | 76%             | 72%   | 
-| Evaluation    |  46%             | 63%             | 70%   |
+| Training      |  60%             | 76%             | 70%   | 
+| Evaluation    |  46%             | 63%             | 72%   |
 
 ### Directory structure
 
