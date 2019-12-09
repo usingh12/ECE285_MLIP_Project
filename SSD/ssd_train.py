@@ -7,7 +7,7 @@ from datasets import PascalVOCDataset
 from utils import *
 
 # Data parameters
-data_folder = './'  # folder with data files
+data_folder = './data/'  # folder with data files
 keep_difficult = True  # use objects considered difficult to detect?
 
 # Model parameters
@@ -16,7 +16,7 @@ n_classes = len(label_map)  # number of different types of objects
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Learning parameters
-checkpoint = './checkpoint_ssd300.pth.tar'  # path to model checkpoint, None if none
+checkpoint = './data/checkpoint_ssd300.pth.tar'  # path to model checkpoint, None if none
 batch_size = 8  # batch size
 start_epoch = 0  # start at this epoch
 epochs = 200  # number of epochs to run without early-stopping
