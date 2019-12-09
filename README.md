@@ -44,7 +44,7 @@ To get the pretrained weights ready for use, download and install according to t
 - Run **Demo_FasterRCNN32.ipynb** notebook to run Faster-RCNN (32) to plot statistics, detect images and videos on PascalVOC2007 dataset (In the notebook, set download=False for dataset loader if you want to use your custom dataset, and give the appropriate path to dataset loader)
 
 ##### Training
-Run **train_fasterrcnn.py** **train_fasterrcnn32.py** script file to train the Faster-RCNN model (16) or Faster-RCNN model (32) on the PascalVOC2012 dataset.
+Run **train_fasterrcnn.py** or **train_fasterrcnn32.py** script file to train the Faster-RCNN model (16) or Faster-RCNN model (32) on the PascalVOC2012 dataset.
 
 ##### Evaluation
 Run **eval_fasterrcnn** or **eval_fasterrcnn32**notebook to evaluate the respective Faster-RCNN models on the PASCALVOC2007 test set.
