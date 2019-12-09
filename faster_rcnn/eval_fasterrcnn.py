@@ -227,9 +227,9 @@ class PascalVOCDataset(voc.VOCDetection):
         return len(self.__getclasses__())
 
 
-voc_det_train = PascalVOCDataset(root='VOC2012', year='2012', image_set='train', transforms=transform_voc, download=False)
+voc_det_train = PascalVOCDataset(root='VOC2012', year='2012', image_set='train', transforms=transform_voc, download=True)
 
-voc_det_val = PascalVOCDataset(root='VOC2012', year='2012', image_set='val', transforms=transform_voc, download=False)
+voc_det_val = PascalVOCDataset(root='VOC2012', year='2012', image_set='val', transforms=transform_voc, download=True)
 
 
 len(voc_det_val)
