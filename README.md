@@ -30,7 +30,7 @@ To install Python dependencies and modules, use <br>
 
 To get the pretrained weights ready for use, download and install according to the following instructions:
 - Faster-RCNN: Download from '' and put the 'checkpoint.pth.tar' file in the folder 'checkpoint_faster_rcnn'
-- SSD: 
+- SSD: Download from 'https://bit.ly/2YCJMks' and put the 'BEST_checkpoint_ssd300.pth.tar' in the data folder.
 
 ### Datasets
 [2012 version](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) of Pascal VOC dataset - well known dataset for object detection/classification/segmentation. Contains 100k images for training and validation containing bounding boxes with 20 categories of objects.<br />
@@ -96,21 +96,21 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
     
 - SSD/ - files for SSD implementation:
     - Video_experiments/ - folder that contains video test and detected file
-        -2.mp4 - Test file
-        -test2_ssd.avi - Object detection on video
+        - 2.mp4 - Test file
+        - test2_ssd.avi - Object detection on video
     - experiment/ - folder that contains training plot results and dectectd images
-        -Plot_loss.ipynb - notebook to plot varoius training loss for SSD
-        -img - folder containg Detected File for SSD
-        -Plots - folder containg Plotted Stats for SSD
+        - Plot_loss.ipynb - notebook to plot varoius training loss for SSD
+        - img - folder containg Detected File for SSD
+        - Plots - folder containg Plotted Stats for SSD
     - data/ - folder that stores the checkpoint files
-        -label_map.json - Label Map
-        -Test_image.json - Test Images
-        -Test_objects.json - Test Objects
-        -Train_image.json - Train Images
-        -Train_objects.json - Train Objects
+        - label_map.json - Label Map
+        - Test_image.json - Test Images
+        - Test_objects.json - Test Objects
+        - Train_image.json - Train Images
+        - Train_objects.json - Train Objects
         - BEST_checkpoint_ssd300.pth.tar - download this file from the above mentioned Google Drive link and place here
-    - SSD_Demo_IMG.ipynb - demo file for SSD implementation. This file detects objects on test images and plots the output. Kindly note that you need to download BEST_checkpoint_ssd300.pth.tar from the above mentioned Google Drive link and place it in root directory before running this.
-    - SSD_Demo_Video.ipynb - demo file for SSD implementation. This file generates detected video files as output. Kindly note that you need to download BEST_checkpoint_ssd300.pth.tar from the above mentioned Google Drive link and place it in root directory before running this.
+    - SSD_Demo_IMG.ipynb - demo file for SSD implementation. This file detects objects on test images and plots the output. Kindly note that you need to download BEST_checkpoint_ssd300.pth.tar from the above mentioned Google Drive link and place it in data directory before running this.
+    - SSD_Demo_Video.ipynb - demo file for SSD implementation. This file generates detected video files as output. Kindly note that you need to download BEST_checkpoint_ssd300.pth.tar from the above mentioned Google Drive link and place it in data directory before running this.
     - create_data_list.py - Create lists of images, the bounding boxes and labels of the objects in these images, and save these to file.
     - detect.py - Detect objects in an image with a trained SSD300, and visualize the results.
     - eval.py - used to calculate and display evaluation loss and mAP on VOC Test Set.
