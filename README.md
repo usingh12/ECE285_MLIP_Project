@@ -29,7 +29,8 @@ To install Python dependencies and modules, use <br>
 ```pip install -r requirements.txt``` <br>
 
 To get the pretrained weights ready for use, download and install according to the following instructions:
-- Faster-RCNN: Download from '' and put the 'checkpoint.pth.tar' file in the folder 'checkpoint_faster_rcnn'
+- Faster-RCNN: Download [Faster-RCNN (16)](https://drive.google.com/open?id=1OahGZd_7ocgdDPWWCyBsqwCD0S3m0DIS) and [Faster-RCNN (32)](https://drive.google.com/open?id=1LH24iGxJt-Luzkm5p5QxnKRD-D2sPZTT) checkpoint files and put the 'checkpoint.pth.tar' file in respective folder 'checkpoint_faster_rcnn' or 'checkpoint_fasterrcnn32'.
+
 - SSD: Download from 'https://bit.ly/2YCJMks' and put the 'BEST_checkpoint_ssd300.pth.tar' in the data folder.
 
 ### Datasets
@@ -39,11 +40,14 @@ To get the pretrained weights ready for use, download and install according to t
 
 ### Demo
 #### Faster-RCNN
-- Run **Demo_FasterRCNN.ipynb** notebook to run Faster-RCNN to plot statistics, detect images and videos on PascalVOC2007 dataset (In the notebook, set :::)
-### Training
-Run **train_fasterrcnn.py** script file to train the Faster-RCNN model on the PascalVOC2012 dataset.
-### Evaluation
-Run **eval_fasterrcnn** notebook to evaluate the Faster-RCNN model on the PASCALVOC2007 test set.
+- Run **Demo_FasterRCNN.ipynb** notebook to run Faster-RCNN (16) to plot statistics, detect images and videos on PascalVOC2007 dataset (In the notebook, set download=False for dataset loader if you want to use your custom dataset, and give the appropriate path to dataset loader)
+- Run **Demo_FasterRCNN32.ipynb** notebook to run Faster-RCNN (32) to plot statistics, detect images and videos on PascalVOC2007 dataset (In the notebook, set download=False for dataset loader if you want to use your custom dataset, and give the appropriate path to dataset loader)
+
+##### Training
+Run **train_fasterrcnn.py** **train_fasterrcnn32.py** script file to train the Faster-RCNN model (16) or Faster-RCNN model (32) on the PascalVOC2012 dataset.
+
+##### Evaluation
+Run **eval_fasterrcnn** or **eval_fasterrcnn32**notebook to evaluate the respective Faster-RCNN models on the PASCALVOC2007 test set.
 
 #### SSD
 - Run **SSD_Demo_IMG.ipynb** notebook to run Single-Shot Detection on a random image from the PascalVOC2007 dataset.
@@ -67,6 +71,9 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
     - checkpoint_fasterrcnn/ - folder that stores the checkpoint files
         - config.txt - the config file for the experiment with batch size 16
         - checkpoint.pth.tar - download this file from the above mentioned Google Drive link and place here
+    - checkpoint_fasterrcnn32/ - folder that stores the checkpoint files
+        - config.txt - the config file for the experiment with batch size 16
+        - checkpoint.pth.tar - download this file from the above mentioned Google Drive link and place here
     - faster_rcnn - directory storing libraries for faster_rcnn implementation
         - pycache - .pyc files for Python interpreter to compile the source to
         - lib - library files for Faster-RCNN implementation
@@ -87,12 +94,18 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
             - _utils_main.py - utility functions for RCNNs
             - _utils.py - utility functions for main RCNN builders
             - utils_box.py - utility functions for calculating mAP
-    - Demo_FasterRCNN.ipynb - demo file for Faster-RCNN implementation. This file plots statistics, detects on test images, and generates detected video files as output. Kindly note that you need tow download checkpoint.pth.tar from the above mentioned Google Drive link and place it in checkpoint_fasterrcnn folder before running this.
-    - eval_fasterrcnn.py - used to calculate and display evaluation loss and mAP on VOC Test Set.
-    - Faster_RCNN_Detection.jpg - Detection example for Faster-RCNN
-    - Faster_RCNN_Stats.jpg - Plotted Stats for Faster-RCNN
-    - Faster_RCNN_Video.avi - Video Detected File for Faster-RCNN
-    - train_fasterrcnn.py - used to perform training on Faster-RCNN
+    - Demo_FasterRCNN.ipynb - demo file for Faster-RCNN (16) implementation. This file plots statistics, detects on test images, and generates detected video files as output. Kindly note that you need to download checkpoint.pth.tar from the above mentioned Google Drive link and place it in checkpoint_fasterrcnn folder before running this.
+    - Demo_FasterRCNN32.ipynb - demo file for Faster-RCNN (32) implementation. This file plots statistics, detects on test images, and generates detected video files as output. Kindly note that you need to download checkpoint.pth.tar from the above mentioned Google Drive link and place it in checkpoint_fasterrcnn folder before running this.
+    - eval_fasterrcnn.py - used to calculate and display evaluation loss and mAP on VOC Test Set for Faster-RCNN (16).
+    - eval_fasterrcnn32.py - used to calculate and display evaluation loss and mAP on VOC Test Set for Faster-RCNN (32).
+    - Faster_RCNN_Detection.jpg - Detection example for Faster-RCNN (16)
+    - Faster_RCNN_Stats.jpg - Plotted Stats for Faster-RCNN (16)
+    - Faster_RCNN_Video.avi - Video Detected File for Faster-RCNN (16)
+    - Faster_RCNN_Detection32.jpg - Detection example for Faster-RCNN (32)
+    - Faster_RCNN_Stats32.jpg - Plotted Stats for Faster-RCNN (32)
+    - Faster_RCNN_Video32.avi - Video Detected File for Faster-RCNN (32)
+    - train_fasterrcnn.py - used to perform training on Faster-RCNN (16)
+    - train_fasterrcnn32.py - used to perform training on Faster-RCNN (32)
     
 - SSD/ - files for SSD implementation:
     - Video_experiments/ - folder that contains video test and detected file
