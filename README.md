@@ -33,7 +33,9 @@ To get the pretrained weights ready for use, download and install according to t
 - SSD: 
 
 ### Datasets
-[2012 version](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) of Pascal VOC dataset - well known dataset for object detection/classification/segmentation. Contains 100k images for training and validation containing bounding boxes with 20 categories of objects.
+[2012 version](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) of Pascal VOC dataset - well known dataset for object detection/classification/segmentation. Contains 100k images for training and validation containing bounding boxes with 20 categories of objects.<br />
+[2007 Trainval version](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar) of Pascal VOC2007 train dataset.<br />
+[2007 Test version](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar) of Pascal VOC2007 test dataset.
 
 ### Demo
 #### Faster-RCNN
@@ -46,8 +48,8 @@ Run **eval_fasterrcnn** notebook to evaluate the Faster-RCNN model on the PASCAL
 #### SSD
 - Run **SSD_Demo_IMG.ipynb** notebook to run Single-Shot Detection on a random image from the PascalVOC2007 dataset.
 ### Training
-Before you begin, make sure to save the required data files for training and validation. To do this, run the contents of **create_data_lists.py** after pointing it to the VOC2007 and VOC2012 folders in your downloaded data.
-Run **ssd_train.py** to train the SSD model on the PascalVOC2012 dataset.
+Before you begin, make sure to save the required data files for training and validation. To do this, run the contents of **create_data_lists.py** after pointing it to the VOC2007 and VOC2012 folders in your downloaded data.<br />
+Run **ssd_train.py** to train the SSD model on the PascalVOC2012 dataset.<br />
 To resume training at a checkpoint, point to the corresponding file with the checkpoint parameter at the beginning of the code.
 ### Evaluation
 Run **ssd_Eval.py** notebook to evaluate the SSD model on the PascalVOC2007 test set.
@@ -60,6 +62,7 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
 | Evaluation    |  46%             | 63%             | 70%   |
 
 ### Directory structure
+
 - faster_rcnn/ - files for Faster-RCNN implementation:
     - checkpoint_fasterrcnn/ - folder that stores the checkpoint files
         - config.txt - the config file for the experiment with batch size 16
@@ -92,10 +95,10 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
     - train_fasterrcnn.py - used to perform training on Faster-RCNN
     
 - SSD/ - files for SSD implementation:
-    - Video_experiments - folder that contains video test and detected file
+    - Video_experiments/ - folder that contains video test and detected file
         -2.mp4 - Test file
         -test2_ssd.avi - Object detection on video
-    - experiment - folder that contains training plot results and dectectd images
+    - experiment/ - folder that contains training plot results and dectectd images
         -Plot_loss.ipynb - notebook to plot varoius training loss for SSD
         -img - folder containg Detected File for SSD
         -Plots - folder containg Plotted Stats for SSD
