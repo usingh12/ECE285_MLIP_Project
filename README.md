@@ -31,7 +31,7 @@ To install Python dependencies and modules, use <br>
 To get the pretrained weights ready for use, download and install according to the following instructions:
 - Faster-RCNN: Download [Faster-RCNN (16)](https://drive.google.com/open?id=1OahGZd_7ocgdDPWWCyBsqwCD0S3m0DIS) and [Faster-RCNN (32)](https://drive.google.com/open?id=1LH24iGxJt-Luzkm5p5QxnKRD-D2sPZTT) checkpoint files and put the 'checkpoint.pth.tar' file in respective folder 'checkpoint_faster_rcnn' or 'checkpoint_fasterrcnn32'.
 
-- SSD: Download from 'https://bit.ly/2YCJMks' and put the 'BEST_checkpoint_ssd300.pth.tar' in the data folder.
+- SSD: Download [SSD](https://bit.ly/2YCJMks) checkpoint files and put the 'BEST_checkpoint_ssd300.pth.tar' in the data folder.
 
 ### Datasets
 [2012 version](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) of Pascal VOC dataset - well known dataset for object detection/classification/segmentation. Contains 100k images for training and validation containing bounding boxes with 20 categories of objects.<br />
@@ -51,12 +51,15 @@ Run **eval_fasterrcnn** or **eval_fasterrcnn32**notebook to evaluate the respect
 
 #### SSD
 - Run **SSD_Demo_IMG.ipynb** notebook to run Single-Shot Detection on a random image from the PascalVOC2007 dataset.
-### Training
+
+##### Training
 Before you begin, make sure to save the required data files for training and validation. To do this, run the contents of **create_data_lists.py** after pointing it to the VOC2007 and VOC2012 folders in your downloaded data.<br />
 Run **ssd_train.py** to train the SSD model on the PascalVOC2012 dataset.<br />
 To resume training at a checkpoint, point to the corresponding file with the checkpoint parameter at the beginning of the code.
-### Evaluation
+
+##### Evaluation
 Run **ssd_eval.py** notebook to evaluate the SSD model on the PascalVOC2007 test set.
+
 ### Performance <br>
 On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub/home):
 
