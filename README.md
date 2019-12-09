@@ -52,7 +52,7 @@ Before you begin, make sure to save the required data files for training and val
 Run **ssd_train.py** to train the SSD model on the PascalVOC2012 dataset.<br />
 To resume training at a checkpoint, point to the corresponding file with the checkpoint parameter at the beginning of the code.
 ### Evaluation
-Run **ssd_Eval.py** notebook to evaluate the SSD model on the PascalVOC2007 test set.
+Run **ssd_eval.py** notebook to evaluate the SSD model on the PascalVOC2007 test set.
 ### Performance <br>
 On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub/home):
 
