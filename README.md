@@ -53,10 +53,10 @@ Run **SSD_Eval_Testset.ipynb** notebook to evaluate the SSD model on the PascalV
 ### Performance <br>
 On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub/home):
 
-| || Faster-RCNN(32) | Faster-RCNN(32) | SSD |
-| ------------- | ------------- | ------------- |
-| Training  |  60% | 76% | % | 
-| Evaluation  | 46% | 63% | % |
+| ------------- || Faster-RCNN(32) | Faster-RCNN(32) | SSD |
+| ------------- | ---------------- | --------------- | --- |
+| Training      |  60%             | 76%             | x%   | 
+| Evaluation    |  46%             | 63%             | x%   |
 
 ### Directory structure
 - faster_rcnn/ - files for Faster-RCNN implementation:
