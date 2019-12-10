@@ -40,6 +40,12 @@ To get the pretrained weights ready for use, download and install according to t
 
 ### Demo
 #### Faster-RCNN
+(Kindly note that in the dataloader for demo, training and evaluation, we have set download=True for PascalVOCDataset object as follows:
+```bash
+voc_det_train = PascalVOCDataset(root='VOC2012', year='2012', transforms = True, image_set='train', download=**True**)
+```
+this will enable automatic download of mentioned VOC dataset. In order to use your own dataset, kindly place your VOCdevkit folder in a folder with name=root in folder faster_rcnn)
+
 - Run **Demo_FasterRCNN.ipynb** notebook to run Faster-RCNN (16) to plot statistics, detect images and videos on PascalVOC2007 dataset (In the notebook, set download=False for dataset loader if you want to use your custom dataset, and give the appropriate path to dataset loader)
 - Run **Demo_FasterRCNN32.ipynb** notebook to run Faster-RCNN (32) to plot statistics, detect images and videos on PascalVOC2007 dataset (In the notebook, set download=False for dataset loader if you want to use your custom dataset, and give the appropriate path to dataset loader)
 
