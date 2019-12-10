@@ -9,7 +9,7 @@
 You can find the clean files named as Faster_RCNN_Video.avi and *.avi
 
 # Faster RCNN
-A Pytorch implementation of the Faster-RCNN algorithm developed by Ross Girschick et al., based on the 2015 paper, "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks" pubilshed in CVPR 2015. 
+A Pytorch implementation of the Faster-RCNN algorithm developed by Ross Girschick et al., based on the 2015 [paper](https://arxiv.org/pdf/1506.01497), "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks" pubilshed in CVPR 2015. 
 
 # Single Shot Detector 
 A PyTorch implementation of the SSD Multibox Detector for image feature extraction, based on the 2016 [Arxiv](http://arxiv.org/abs/1512.02325) paper by Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed, Cheng-Yang, and Alexander C.
