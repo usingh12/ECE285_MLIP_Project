@@ -141,7 +141,7 @@ On [UCSD Data Science and Machine Learning Cluster](https://datahub.ucsd.edu/hub
     - utils.py - utility functions for main SSD builders
 
 ### References <br>
-Apart from links above for SSD Arxiv paper and VOC dataset documentation, we referred to:
+Apart from links above for Faster-RCNN and SSD Arxiv paper and VOC dataset documentation, we referred to:
 - [Project problem statement document](https://www.charles-deledalle.fr/pages/files/ucsd_ece285_mlip/projectC_object_detection.pdf)
 
 ## A project by - 
