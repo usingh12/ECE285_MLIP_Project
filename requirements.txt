@@ -31,7 +31,7 @@ nbresuse==0.2.0
 nltk==3.4.5
 notebook==6.0.0
 numpy==1.16.4
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 pandas==0.25.0
 pickleshare==0.7.5
 Pillow==6.3.0
